@@ -6,7 +6,10 @@ RUN locale-gen en_US.UTF-8
 
 ENV LANG en_US.UTF-8
 RUN apt-get update && apt-get install -y \
+  ros-kinetic-moveit \
+  ros-kinetic-industrial-robot-simulator \
   ros-kinetic-ur-description \
+  ros-kinetic-turtlebot* \
   software-properties-common \
   terminator \
   curl \
